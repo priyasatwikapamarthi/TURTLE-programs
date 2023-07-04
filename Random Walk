@@ -1,0 +1,25 @@
+import turtle
+from turtle import Turtle,Screen
+import random
+turtle.colormode(255)
+timmy = Turtle()
+timmy.shape("arrow")
+timmy.color("SeaGreen")
+
+def random_colour() :
+    r = random.randint(0,255)
+    g = random.randint(0,255)
+    b = random.randint(0,255)
+    random_color = (r,g,b)
+    return random_color
+
+
+colours = ["coral","tomato","dark salmon","pale violet red","steel blue","rosy brown","medium aquamarine","alice blue","teal","dark orange"]
+angle = [0,90,180,270]
+timmy.speed("normal")
+timmy.width(6)
+
+for i in range(100) :
+    timmy.color(random_colour())
+    timmy.forward(30)
+    timmy.right(random.choice(angle))
