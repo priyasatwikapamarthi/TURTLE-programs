@@ -1,0 +1,13 @@
+import turtle
+from turtle import Turtle,Screen
+import random
+turtle.colormode(255)
+timmy = Turtle()
+timmy.shape("arrow")
+timmy.color("SeaGreen")
+
+for i in range(15) :
+    timmy.forward(10)
+    timmy.penup()
+    timmy.forward(10)
+    timmy.pendown()
